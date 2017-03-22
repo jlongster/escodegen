@@ -2549,13 +2549,13 @@
         extra = options;
 
         if (sourceMap) {
-            if (!exports.browser) {
-                // We assume environment is node.js
-                // And prevent from including source-map by browserify
-                SourceNode = require('source-map').SourceNode;
-            } else {
-                SourceNode = global.sourceMap.SourceNode;
-            }
+            // if (!exports.browser) {
+            //     // We assume environment is node.js
+            //     // And prevent from including source-map by browserify
+            //     SourceNode = require('source-map').SourceNode;
+            // } else {
+            //     SourceNode = global.sourceMap.SourceNode;
+            // }
         }
 
         result = generateInternal(node);
